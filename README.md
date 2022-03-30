@@ -32,16 +32,16 @@ public class Ejercicio_0 {
 		}
 		return true; 
 	}
-	
+	/// solo con cuadradas sirve
 	public static void main(String[] args){
-		
+		///ejemplo es mi matriz
 		int[][] ejemplo = {
 				{1,2,3},
 				{4,2,6},
 				{7,8,2}
 		};
 		
-		Ejercicio_0 miEjercicio = new Ejercicio_0();
-		System.out.println(miEjercicio.comprobar(ejemplo));
+		Ejercicio_0 miEjercicio = new Ejercicio_0();			
+		System.out.println(miEjercicio.comprobar(ejemplo));		
 	}
 }
