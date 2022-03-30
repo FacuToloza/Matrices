@@ -32,7 +32,55 @@ public class Ejercicio_0 {
 		}
 		return true; 
 	}
+	
+	
+	
+	
+	
+	
 	/// solo con cuadradas sirve
+	
+	
+	
+	///mejora a WHILE
+	public boolean comprobar(int[][] matriz)///Metodo de momento publico
+	{
+	
+		int sumaDeLasAnteriores = matriz[0][0];
+		boolean bandera = true;
+		int i = 1;
+	///	for(int i = 0; i< matriz.length; i++)
+		
+			while(i< matriz.length && bandera)
+		{
+			if(matriz[i][i] == sumaDeLasAnteriores)
+				
+			{
+				sumaDeLasAnteriores = sumaDeLasAnteriores + matriz[i][i]; 
+				 i++;
+			}
+			else {
+				bandera = false;
+				///return false;
+			}
+			
+		}
+		return bandera;
+		///return true; 
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	public static void main(String[] args){
 		///ejemplo es mi matriz
 		int[][] ejemplo = {
