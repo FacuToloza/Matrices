@@ -41,7 +41,7 @@ public class Ejercicio_0 {
 				{7,8,2}
 		};
 		
-		Ejercicio_0 miEjercicio = new Ejercicio_0();			
-		System.out.println(miEjercicio.comprobar(ejemplo));		
+		Ejercicio_0 miEjercicio = new Ejercicio_0();			///instancio
+		System.out.println(miEjercicio.comprobar(ejemplo));			///saco ppor pantalla
 	}
 }
