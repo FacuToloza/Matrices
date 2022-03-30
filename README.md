@@ -19,7 +19,7 @@ public class Ejercicio_0 {
 	public boolean comprobar(int[][] matriz)///Metodo de momento publico
 	{
 	
-		int sumaDeLasAnteriores = matriz[0][0];
+		int sumaDeLasAnteriores = matriz[0][0]; ///necesito el primer valor antes de recorrer 
 		for(int i = 0; i< matriz.length; i++) ///matriz lengt, es el largo, en clase usea i=1 para agilizar
 		{
 			if(matriz[i][i] == sumaDeLasAnteriores)
