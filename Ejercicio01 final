@@ -1,0 +1,60 @@
+//Escribir un método en Java que permita comprobar si la multiplicación
+//de todos los valores de una matriz numérica, dará 0 o no
+
+
+public class Matriz_01 
+{
+
+	public boolean Metodo(int[][] matriz)
+	{
+
+		int Multiplicacion = 1;
+		boolean Bandera = true;
+		int i = 0, j = 0;
+		Multiplicacion = Multiplicacion * matriz[i][j];
+        while (i < matriz.length && Bandera) 
+        {
+ 
+            System.out.println(matriz[i][j]);
+          
+           
+            if (matriz[i][j] == 0)
+            {
+            	Multiplicacion = Multiplicacion * matriz[i][j];
+            	Bandera = false;
+            }
+          
+            Multiplicacion = Multiplicacion * matriz[i][j];
+         
+            if (j == matriz[0].length - 1) 
+            {
+            	  System.out.println("|");
+                i++;
+                j = 0;
+                
+            } else 
+            	{
+                j++;
+                   
+            	}        
+        }
+        System.out.println("Resultado");
+        System.out.println(Multiplicacion);
+        return Bandera;      
+	}
+	
+	
+	public static void main(String[] args)
+	{
+	
+	int[][] MatrizEjemplo = {
+			{1,2,11},
+			{1,0,1},
+			{4,1,1}
+	};
+	
+	Matriz_01 MatrizEjercicio = new Matriz_01();			
+	System.out.println(MatrizEjercicio.Metodo(MatrizEjemplo));			
+	
+	}
+}
